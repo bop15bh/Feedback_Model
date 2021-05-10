@@ -1,6 +1,5 @@
 function co2Ntest
 % Code for solving thornley model converted thornley's input values 
-addpath('/home/bop15bh')
 close ALL
 fa=[];
 fb=[];
