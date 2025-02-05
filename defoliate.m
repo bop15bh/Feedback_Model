@@ -216,7 +216,7 @@ figure(1)
           %  axis([0 20 0 0.25])
  x_width=15.65 ;y_width=14.99;
  set(gcf, 'PaperPosition', [0 0 x_width y_width]);
-print('FEBDFOL1','-depsc','-loose');
+print('FEBDFOL1','-djpeg','-loose');
 
 % plot of leaf nitrogen
 figure(222)
@@ -260,7 +260,7 @@ hold on, drawnow
  set(gcf, 'PaperUnits', 'inches');
  x_width=31.3 ;y_width=14.99;
  set(gcf, 'PaperPosition', [0 0 x_width y_width]);
-print('FEBDFOL3','-depsc','-loose');
+print('FEBDFOL3','-djpeg','-loose');
 
 % Plot of shoot:root ratio
 figure(4)
@@ -276,7 +276,7 @@ ylabel('Shoot:root ratio','FontSize',50);
  set(gcf, 'PaperUnits', 'inches');
  x_width=15.65 ;y_width=14.99;
  set(gcf, 'PaperPosition', [0 0 x_width y_width]);
-print('FEBDFOL4','-depsc','-loose'); 
+print('FEBDFOL4','-djpeg','-loose'); 
 % plotting leaf mass and root mass over time
   figure(3) 
 plot(time,leaf,'color',C{i},'marker','square','MarkerSize',3,'LineWidth',4);
@@ -291,7 +291,7 @@ grid on
  set(gcf, 'PaperUnits', 'inches');
  x_width=15.65 ;y_width=14.99;
  set(gcf, 'PaperPosition', [0 0 x_width y_width]);
-print('FEBDFOL5','-depsc','-loose');
+print('FEBDFOL5','-djpeg','-loose');
 
  % plotting growth rate change over time
 figure(5) 
@@ -317,28 +317,28 @@ set(gca,'LineWidth',2,'FontSize',50)
  legend('Leaf 350ppm ','Root 350ppm ','Leaf 700ppm ','Root 700ppm ','Location','Best');
  x_width=15.65 ;y_width=14.99;
  set(gcf, 'PaperPosition', [0 0 x_width y_width]);
-print('FEBDFOL6','-depsc','-loose');
+print('FEBDFOL6','-djpeg','-loose');
 leaf(end)+root(end)
 end
  % code to add the markers to the graphs
  figure(11)
         plot(tttime,cup,'ko','MarkerSize',15,'MarkerFaceColor',[0.25, 0.25, 0.25]);
                     legend('350ppm CO_2','700ppm CO_2','Location','Best')
-                        print('nof2KCDFOL1','-depsc','-loose');
+                        print('nof2KCDFOL1','-djpeg','-loose');
  figure(1066)
         plot(tttime,nup,'ko','MarkerSize',15,'MarkerFaceColor',[0.25, 0.25, 0.25]);
                     legend('350ppm CO_2','700ppm CO_2','Location','Best')
-                  print('KNDFOL1','-depsc','-loose');
+                  print('KNDFOL1','-djpeg','-loose');
 
 figure(222)                   
-        plot(tttime,NUP,'MarkerSize',10);
+        plot(tttime,NUP,'ko','MarkerSize',15,'MarkerFaceColor',[0.25, 0.25, 0.25]);
 legend('350ppm CO_2','700ppm CO_2','Location','Best')
-print('nof2FEBDFOL2','-depsc','-loose');
+print('nof2FEBDFOL2','-djpeg','-loose');
 
 figure(212)
-        plot(tttime,CUP,'ko','MarkerSize',10);
+        plot(tttime,CUP,'ko','MarkerSize',15,'MarkerFaceColor',[0.25, 0.25, 0.25]);
         legend('350ppm CO_2','700ppm CO_2','Location','Best')
-print('nof2FEBDFOL3','-depsc','-loose');
+print('nof2FEBDFOL3','-djpeg','-loose');
 %% Defining the functions for uptake rates, growth rates and model ODEs
     % Carbon uptake rate
     function ff=f(z,x,y)
